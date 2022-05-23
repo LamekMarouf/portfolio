@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+  background-color: #3C3434;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 720px;
+}
+
+.home .intro {
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.home .name {
+  color: #59DBDB;
+  font-weight: 700;
+}
+
+.home .caption {
+  color: #C1C1C1;
+}
+/*# sourceMappingURL=style.css.map */

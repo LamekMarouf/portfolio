@@ -37,4 +37,44 @@ body {
 .home .caption {
   color: #C1C1C1;
 }
+
+.navbar {
+  height: 450px;
+  background-color: #3C3434;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  -webkit-transform: rotate(351deg);
+          transform: rotate(351deg);
+  margin-top: 275px;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar .skewed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 300px 1900px 0 0px;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+}
+
+.projects {
+  background-color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */

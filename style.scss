@@ -1,4 +1,5 @@
 $greyBackground: #3C3434;
+$whiteBackground: #ffffff;
 $textColor: #ffffff;
 $titleColor: #59DBDB;
 $secondaryTextColor: #C1C1C1;
@@ -32,4 +33,37 @@ body {
     .caption {
         color: $secondaryTextColor;
     }
+}
+
+.navbar {
+    height: 450px;
+    background-color: $greyBackground;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        font-size: 24px;
+        font-weight: 600;
+        color: $textColor;
+        transform: rotate(351deg);
+        margin-top: 275px;
+        li {
+            list-style: none;
+            padding: 0;
+        }
+    }
+    .skewed {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-width: 300px 1900px 0 0px;
+        border-color: transparent #fff transparent transparent;
+        border-style: solid;
+    }
+}
+
+.projects {
+    background-color: $whiteBackground;
 }

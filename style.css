@@ -169,11 +169,50 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects .project-cards .card {
-  background: -webkit-gradient(linear, left top, right bottom, from(#26FFF2), to(#18F856));
-  background: linear-gradient(to bottom right, #26FFF2, #18F856);
+  background: -webkit-gradient(linear, left top, right bottom, from(#26fff2), to(#18f856));
+  background: linear-gradient(to bottom right, #26fff2, #18f856);
+  margin: 60px;
+  height: 450px;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 4fr 1fr;
+      grid-template-rows: 1fr 4fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .project-cards .card .title {
+  color: #ffffff;
+}
+
+.projects .project-cards .card .description {
+  color: #3a3a3a;
+  padding: 40px;
+}
+
+.projects .project-cards .card .repo-button {
+  background-color: #313131;
+  height: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 30px;
+  border: 2px solid #313131;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,16 +222,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 60px;
-  height: 450px;
-  border-radius: 20px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 4fr 1fr;
-      grid-template-rows: 1fr 4fr 1fr;
+  margin: 0px 75px;
 }
 
-.projects .project-cards .card .title {
-  color: #ffffff;
+.projects .project-cards .card .repo-button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #313131;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

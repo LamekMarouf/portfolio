@@ -4,7 +4,8 @@ $textColor: #ffffff;
 $titleColor: #59dbdb;
 $secondaryTextColor: #c1c1c1;
 $titleSize: 36px;
-$cardGradient: linear-gradient(to bottom right, #26FFF2, #18F856);;
+$cardGradient: linear-gradient(to bottom right, #26fff2, #18f856);
+$cardText: #3a3a3a;
 
 @mixin flexCenter {
   display: flex;
@@ -113,16 +114,40 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
     .card {
       background: $cardGradient;
-      @include flexCenter();
       margin: 60px;
       height: 450px;
       border-radius: 20px;
       display: grid;
       grid-template-rows: 1fr 4fr 1fr;
+      align-items: center;
+      justify-content: center;
       .title {
         color: $textColor;
+      }
+      .description {
+        color: $cardText;
+        padding: 40px;
+      }
+      .repo-button {
+        background-color: $greyBackground;
+        height: 40px;
+        font-weight: 600;
+        color: $textColor;
+        border-radius: 30px;
+        border: 2px solid $greyBackground;
+        transition: .1s ease-in-out;
+        @include flexCenter();
+        margin: 0px 75px;
+        &:hover {
+          cursor: pointer;
+          background-color: $textColor;
+          color: $greyBackground;
+          transition: .1s ease-in-out;
+        }
       }
     }
   }

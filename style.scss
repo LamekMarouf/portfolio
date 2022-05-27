@@ -98,3 +98,15 @@ body {
   }
 }
 
+.projects {
+  height: 1280px;
+  background-color: $greyBackground;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  .title {
+    color: $titleColor;
+    font-size: $titleSize;
+    font-weight: 700;
+    @include flexCenter();
+  }
+}

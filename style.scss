@@ -1,69 +1,100 @@
-$greyBackground: #3C3434;
+$greyBackground: #313131;
 $whiteBackground: #ffffff;
 $textColor: #ffffff;
-$titleColor: #59DBDB;
-$secondaryTextColor: #C1C1C1;
+$titleColor: #59dbdb;
+$secondaryTextColor: #c1c1c1;
+$titleSize: 36px;
 
 @mixin flexCenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .home {
-    background-color: $greyBackground;
+  background-color: $greyBackground;
+  @include flexCenter();
+  flex-direction: column;
+  height: 720px;
+  .intro {
+    color: $textColor;
+    font-size: $titleSize;
+  }
+  .name {
+    color: $titleColor;
+    font-weight: 700;
+  }
+  .caption {
+    color: $secondaryTextColor;
+  }
+}
+
+.skewed-one {
+  height: 450px;
+  background-color: $greyBackground;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .skewed-two {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 300px 1900px 0 0px;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+  }
+}
+
+.about-me {
+  background-color: $whiteBackground;
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  justify-content: center;
+  align-items: center;
+  .title {
+    font-size: $titleSize;
+    font-weight: 700;
+    color: $titleColor;
     @include flexCenter();
-    flex-direction: column;
-    height: 720px;
-    .intro {
-        color: $textColor;
-        font-size: 36px;
+    span {
+      color: $greyBackground;
+      margin-left: 10px;
     }
-    .name {
-        color: $titleColor;
-        font-weight: 700;
+  }
+  .description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .text {
+      padding: 100px;
+      @include flexCenter();
     }
-    .caption {
-        color: $secondaryTextColor;
+    .picture {
+      padding: 100px;
+      @include flexCenter();
     }
+  }
 }
 
-.navbar {
-    height: 450px;
-    background-color: $greyBackground;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    ul {
-        display: flex;
-        justify-content: space-around;
-        font-size: 24px;
-        font-weight: 600;
-        color: $textColor;
-        transform: rotate(351deg);
-        margin-top: 275px;
-        li {
-            list-style: none;
-            padding: 0;
-        }
-    }
-    .skewed {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        border-width: 300px 1900px 0 0px;
-        border-color: transparent #fff transparent transparent;
-        border-style: solid;
-    }
+.skewed-three {
+  height: 450px;
+  background-color: $whiteBackground;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .skewed-four {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 300px 1900px 0 0px;
+    border-color: transparent $greyBackground transparent transparent;
+    border-style: solid;
+  }
 }
 
-.projects {
-    background-color: $whiteBackground;
-}

@@ -4,6 +4,7 @@ $textColor: #ffffff;
 $titleColor: #59dbdb;
 $secondaryTextColor: #c1c1c1;
 $titleSize: 36px;
+$cardGradient: linear-gradient(to bottom right, #26FFF2, #18F856);;
 
 @mixin flexCenter {
   display: flex;
@@ -99,7 +100,6 @@ body {
 }
 
 .projects {
-  height: 1280px;
   background-color: $greyBackground;
   display: grid;
   grid-template-rows: 1fr 10fr;
@@ -108,5 +108,22 @@ body {
     font-size: $titleSize;
     font-weight: 700;
     @include flexCenter();
+  }
+  .project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    .card {
+      background: $cardGradient;
+      @include flexCenter();
+      margin: 60px;
+      height: 450px;
+      border-radius: 20px;
+      display: grid;
+      grid-template-rows: 1fr 4fr 1fr;
+      .title {
+        color: $textColor;
+      }
+    }
   }
 }

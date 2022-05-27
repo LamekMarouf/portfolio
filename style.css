@@ -140,7 +140,6 @@ body {
 }
 
 .projects {
-  height: 1280px;
   background-color: #313131;
   display: -ms-grid;
   display: grid;
@@ -161,5 +160,39 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.projects .project-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.projects .project-cards .card {
+  background: -webkit-gradient(linear, left top, right bottom, from(#26FFF2), to(#18F856));
+  background: linear-gradient(to bottom right, #26FFF2, #18F856);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px;
+  height: 450px;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 4fr 1fr;
+      grid-template-rows: 1fr 4fr 1fr;
+}
+
+.projects .project-cards .card .title {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

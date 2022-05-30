@@ -192,3 +192,47 @@ body {
     }
   }
 }
+
+
+.socials {
+  background-color: $greyBackground;
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+  align-items: center;
+  justify-content: center;
+  color: $textColor;
+  .title {
+    color: $titleColor;
+    font-size: $titleSize;
+    font-weight: 700;
+    @include flexCenter();
+  }
+  .links {
+    margin-top: 50px;
+    .linkedin, .github, .resume, .contact-me {
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+      gap: 10px;
+      margin: 50px;
+      .logo {
+        background: $cardGradient;
+        padding: 30px;
+        border-radius: 100px;
+      }
+      .button {
+        background: $cardGradient;
+        padding: 30px;
+        @include flexCenter();
+        font-size: 30px;
+        font-weight: 700;
+        border-radius: 100px;
+        transition: .15s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          color: $greyBackground;
+          transition: .15s ease-in-out;
+        }
+      }
+    }
+  }
+}

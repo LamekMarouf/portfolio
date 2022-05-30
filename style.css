@@ -307,4 +307,81 @@ body {
   -webkit-box-shadow: #313131 2px 2px 5px;
           box-shadow: #313131 2px 2px 5px;
 }
+
+.socials {
+  background-color: #313131;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 8fr;
+      grid-template-rows: 1fr 8fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+}
+
+.socials .title {
+  color: #59dbdb;
+  font-size: 36px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials .links {
+  margin-top: 50px;
+}
+
+.socials .links .linkedin, .socials .links .github, .socials .links .resume, .socials .links .contact-me {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 6fr;
+      grid-template-columns: 1fr 6fr;
+  gap: 10px;
+  margin: 50px;
+}
+
+.socials .links .linkedin .logo, .socials .links .github .logo, .socials .links .resume .logo, .socials .links .contact-me .logo {
+  background: -webkit-gradient(linear, left top, right bottom, from(#26fff2), to(#18f856));
+  background: linear-gradient(to bottom right, #26fff2, #18f856);
+  padding: 30px;
+  border-radius: 100px;
+}
+
+.socials .links .linkedin .button, .socials .links .github .button, .socials .links .resume .button, .socials .links .contact-me .button {
+  background: -webkit-gradient(linear, left top, right bottom, from(#26fff2), to(#18f856));
+  background: linear-gradient(to bottom right, #26fff2, #18f856);
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 100px;
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+}
+
+.socials .links .linkedin .button:hover, .socials .links .github .button:hover, .socials .links .resume .button:hover, .socials .links .contact-me .button:hover {
+  cursor: pointer;
+  color: #313131;
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+}
 /*# sourceMappingURL=style.css.map */

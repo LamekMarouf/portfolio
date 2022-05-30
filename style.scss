@@ -54,6 +54,23 @@ body {
   }
 }
 
+.skewed-three {
+  height: 450px;
+  background-color: $whiteBackground;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .skewed-four {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 300px 1900px 0 0px;
+    border-color: transparent $greyBackground transparent transparent;
+    border-style: solid;
+  }
+}
+
+
 .about-me {
   background-color: $whiteBackground;
   display: grid;
@@ -84,21 +101,6 @@ body {
   }
 }
 
-.skewed-three {
-  height: 450px;
-  background-color: $whiteBackground;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  .skewed-four {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-width: 300px 1900px 0 0px;
-    border-color: transparent $greyBackground transparent transparent;
-    border-style: solid;
-  }
-}
 
 .projects {
   background-color: $greyBackground;
@@ -148,6 +150,44 @@ body {
           color: $greyBackground;
           transition: .1s ease-in-out;
         }
+      }
+    }
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-rows: 1fr 1fr 10fr;
+  align-items: center;
+  justify-content: center;
+  .title {
+    font-size: $titleSize;
+    color: $titleColor;
+    font-weight: 700;
+    @include flexCenter();
+  }
+  .description {
+    @include flexCenter();
+  }
+  .skills-list {
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(1fr 10);
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        padding: 0;
+        @include flexCenter();
+        margin: 40px 60px;
+        padding: 30px 50px;
+        background: $cardGradient;
+        border-radius: 100px;
+        font-size: 20px;
+        font-weight: 600;
+        color: $textColor;
+        box-shadow: $greyBackground 2px 2px 5px;
       }
     }
   }

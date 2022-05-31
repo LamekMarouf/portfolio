@@ -214,14 +214,20 @@ body {
       grid-template-columns: 1fr 6fr;
       gap: 10px;
       margin: 50px;
-      .logo {
+      .logo-box {
         background: $cardGradient;
-        padding: 30px;
-        border-radius: 100px;
+        padding: 10px;
+        border-radius: 200px;
+        height: 50px;
+        @include flexCenter();
+        .logo {
+          height: 50px;
+        }
       }
       .button {
         background: $cardGradient;
         padding: 30px;
+        height: 15px;
         @include flexCenter();
         font-size: 30px;
         font-weight: 700;

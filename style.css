@@ -351,17 +351,32 @@ body {
   margin: 50px;
 }
 
-.socials .links .linkedin .logo, .socials .links .github .logo, .socials .links .resume .logo, .socials .links .contact-me .logo {
+.socials .links .linkedin .logo-box, .socials .links .github .logo-box, .socials .links .resume .logo-box, .socials .links .contact-me .logo-box {
   background: -webkit-gradient(linear, left top, right bottom, from(#26fff2), to(#18f856));
   background: linear-gradient(to bottom right, #26fff2, #18f856);
-  padding: 30px;
-  border-radius: 100px;
+  padding: 10px;
+  border-radius: 200px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials .links .linkedin .logo-box .logo, .socials .links .github .logo-box .logo, .socials .links .resume .logo-box .logo, .socials .links .contact-me .logo-box .logo {
+  height: 50px;
 }
 
 .socials .links .linkedin .button, .socials .links .github .button, .socials .links .resume .button, .socials .links .contact-me .button {
   background: -webkit-gradient(linear, left top, right bottom, from(#26fff2), to(#18f856));
   background: linear-gradient(to bottom right, #26fff2, #18f856);
   padding: 30px;
+  height: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

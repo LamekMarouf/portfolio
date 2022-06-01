@@ -131,12 +131,14 @@ body {
       flex-direction: column;
       .title {
         color: $textColor;
-        display: none;
+        opacity: 0;
+        transition: .3s ease-in-out;
       }
       .description {
         color: $cardText;
         padding: 40px;
-        display: none;
+        opacity: 0;
+        transition: .3s ease-in-out;
       }
       .repo-button {
         background-color: $greyBackground;
@@ -148,7 +150,8 @@ body {
         transition: .1s ease-in-out;
         @include flexCenter();
         margin: 0px 75px;
-        display: none;
+        opacity: 0;
+        transition: .3s ease-in-out;
         &:hover {
           cursor: pointer;
           background-color: $textColor;
@@ -159,14 +162,18 @@ body {
       .image {
         position: absolute;
         height: 400px;
+        transition: .3s ease-in-out;
+        opacity: 1;
       }
       &:hover {
         .title, .description, .repo-button {
-          display: block;
+          opacity: 1;
           @include flexCenter();
+          transition: .3s ease-in-out;
         }
         .image {
-          display: none;
+          opacity: 0;
+          transition: .3s ease-in-out;
         }
       }
     }

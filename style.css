@@ -206,13 +206,17 @@ body {
 
 .projects .project-cards .card .title {
   color: #ffffff;
-  display: none;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .projects .project-cards .card .description {
   color: #3a3a3a;
   padding: 40px;
-  display: none;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .projects .project-cards .card .repo-button {
@@ -234,7 +238,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0px 75px;
-  display: none;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .projects .project-cards .card .repo-button:hover {
@@ -248,10 +254,13 @@ body {
 .projects .project-cards .card .image {
   position: absolute;
   height: 400px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 1;
 }
 
 .projects .project-cards .card:hover .title, .projects .project-cards .card:hover .description, .projects .project-cards .card:hover .repo-button {
-  display: block;
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,10 +270,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .projects .project-cards .card:hover .image {
-  display: none;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .skills {

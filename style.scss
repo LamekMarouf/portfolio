@@ -127,12 +127,16 @@ body {
       grid-template-rows: 1fr 4fr 1fr;
       align-items: center;
       justify-content: center;
+      @include flexCenter();
+      flex-direction: column;
       .title {
         color: $textColor;
+        display: none;
       }
       .description {
         color: $cardText;
         padding: 40px;
+        display: none;
       }
       .repo-button {
         background-color: $greyBackground;
@@ -144,11 +148,25 @@ body {
         transition: .1s ease-in-out;
         @include flexCenter();
         margin: 0px 75px;
+        display: none;
         &:hover {
           cursor: pointer;
           background-color: $textColor;
           color: $greyBackground;
           transition: .1s ease-in-out;
+        }
+      }
+      .image {
+        position: absolute;
+        height: 400px;
+      }
+      &:hover {
+        .title, .description, .repo-button {
+          display: block;
+          @include flexCenter();
+        }
+        .image {
+          display: none;
         }
       }
     }

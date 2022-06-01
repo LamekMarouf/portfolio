@@ -193,15 +193,26 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projects .project-cards .card .title {
   color: #ffffff;
+  display: none;
 }
 
 .projects .project-cards .card .description {
   color: #3a3a3a;
   padding: 40px;
+  display: none;
 }
 
 .projects .project-cards .card .repo-button {
@@ -223,6 +234,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0px 75px;
+  display: none;
 }
 
 .projects .project-cards .card .repo-button:hover {
@@ -231,6 +243,28 @@ body {
   color: #313131;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
+}
+
+.projects .project-cards .card .image {
+  position: absolute;
+  height: 400px;
+}
+
+.projects .project-cards .card:hover .title, .projects .project-cards .card:hover .description, .projects .project-cards .card:hover .repo-button {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .project-cards .card:hover .image {
+  display: none;
 }
 
 .skills {

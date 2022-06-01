@@ -243,10 +243,20 @@ body {
   transition: .3s ease-in-out;
 }
 
+.projects .project-cards .card .repo-button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.projects .project-cards .card .repo-button a:hover {
+  color: #313131;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
 .projects .project-cards .card .repo-button:hover {
   cursor: pointer;
   background-color: #ffffff;
-  color: #313131;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
@@ -396,6 +406,11 @@ body {
       grid-template-columns: 1fr 6fr;
   gap: 10px;
   margin: 50px;
+}
+
+.socials .links .linkedin a, .socials .links .github a, .socials .links .resume a, .socials .links .contact-me a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .socials .links .linkedin .logo-box, .socials .links .github .logo-box, .socials .links .resume .logo-box, .socials .links .contact-me .logo-box {

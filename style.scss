@@ -152,10 +152,17 @@ body {
         margin: 0px 75px;
         opacity: 0;
         transition: .3s ease-in-out;
+        a {
+          text-decoration: none;
+          color: $textColor;
+          &:hover {
+            color: $greyBackground;
+            transition: .1s ease-in-out;
+          }
+        }
         &:hover {
           cursor: pointer;
           background-color: $textColor;
-          color: $greyBackground;
           transition: .1s ease-in-out;
         }
       }
@@ -239,6 +246,10 @@ body {
       grid-template-columns: 1fr 6fr;
       gap: 10px;
       margin: 50px;
+      a {
+        text-decoration: none;
+        color: $textColor;
+      }
       .logo-box {
         background: $cardGradient;
         padding: 10px;

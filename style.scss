@@ -168,6 +168,9 @@ body {
           cursor: pointer;
           background-color: $textColor;
           transition: .1s ease-in-out;
+          a {
+            color: $greyBackground;
+          }
         }
       }
       .image {
@@ -175,17 +178,26 @@ body {
         height: 400px;
         transition: .3s ease-in-out;
         opacity: 1;
+        @include flexCenter();
+        font-size: 60px;
+        font-weight: 700;
+        color: $textColor;
+        text-shadow: 2px 2px $greyBackground;
       }
       &:hover {
         .title, .description, .repo-button {
           opacity: 1;
           @include flexCenter();
           transition: .3s ease-in-out;
+          z-index: 2;
         }
         .image {
           opacity: 0;
           transition: .3s ease-in-out;
         }
+      }
+      #social-network-api {
+        font-size: 50px;
       }
     }
   }

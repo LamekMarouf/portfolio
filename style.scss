@@ -93,6 +93,10 @@ body {
     .text {
       padding: 100px;
       @include flexCenter();
+      flex-direction: column;
+      div {
+        margin-bottom: 20px;
+      }
     }
     .picture {
       padding: 100px;

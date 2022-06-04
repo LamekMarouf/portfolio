@@ -320,6 +320,10 @@ body {
   font-size: 50px;
 }
 
+.projects .project-cards .card #ecommerce-backend {
+  font-size: 46px;
+}
+
 .skills {
   display: -ms-grid;
   display: grid;

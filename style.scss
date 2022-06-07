@@ -251,6 +251,8 @@ body {
   align-items: center;
   justify-content: center;
   color: $textColor;
+  @include flexCenter();
+  flex-direction: column;
   .title {
     color: $titleColor;
     font-size: $titleSize;

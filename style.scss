@@ -107,6 +107,7 @@ body {
         color: $textColor;
         font-weight: 700;
         transition: .2s ease;
+        box-shadow: $greyBackground 2px 2px 5px;
         &:hover {
           cursor: pointer;
           color: $greyBackground;

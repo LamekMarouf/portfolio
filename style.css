@@ -147,6 +147,8 @@ body {
   font-weight: 700;
   -webkit-transition: .2s ease;
   transition: .2s ease;
+  -webkit-box-shadow: #313131 2px 2px 5px;
+          box-shadow: #313131 2px 2px 5px;
 }
 
 .about-me .description .text .resume:hover {

@@ -97,6 +97,22 @@ body {
       div {
         margin-bottom: 20px;
       }
+      a {
+        text-decoration: none;
+      }
+      .resume {
+        background: $cardGradient;
+        padding: 15px;
+        border-radius: 100px;
+        color: $textColor;
+        font-weight: 700;
+        transition: .2s ease;
+        &:hover {
+          cursor: pointer;
+          color: $greyBackground;
+          transition: .2s ease;
+        }
+      }
     }
     .picture {
       padding: 100px;

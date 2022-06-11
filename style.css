@@ -134,6 +134,28 @@ body {
   margin-bottom: 20px;
 }
 
+.about-me .description .text a {
+  text-decoration: none;
+}
+
+.about-me .description .text .resume {
+  background: -webkit-gradient(linear, left top, right bottom, from(#26fff2), to(#18f856));
+  background: linear-gradient(to bottom right, #26fff2, #18f856);
+  padding: 15px;
+  border-radius: 100px;
+  color: #ffffff;
+  font-weight: 700;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.about-me .description .text .resume:hover {
+  cursor: pointer;
+  color: #313131;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
 .about-me .description .picture {
   padding: 100px;
   display: -webkit-box;

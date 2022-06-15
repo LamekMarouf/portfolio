@@ -89,7 +89,7 @@ body {
   }
   .description {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     .text {
       padding: 100px;
       @include flexCenter();
@@ -114,10 +114,6 @@ body {
           transition: .2s ease;
         }
       }
-    }
-    .picture {
-      padding: 100px;
-      @include flexCenter();
     }
   }
 }
@@ -161,6 +157,7 @@ body {
         opacity: 0;
         transition: .3s ease-in-out;
       }
+      
       .repo-button {
         background-color: $greyBackground;
         height: 40px;

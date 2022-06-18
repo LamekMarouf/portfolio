@@ -157,36 +157,31 @@ body {
         opacity: 0;
         transition: .3s ease-in-out;
       }
-      
-      .repo-button {
-        background-color: $greyBackground;
-        height: 40px;
-        font-weight: 600;
-        color: $textColor;
-        border-radius: 30px;
-        border: 2px solid $greyBackground;
-        transition: .1s ease-in-out;
-        @include flexCenter();
-        margin: 0px 75px;
+      .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
         opacity: 0;
         transition: .3s ease-in-out;
         a {
-          text-decoration: none;
+          background-color: $greyBackground;
+          z-index: 3;
+          padding: 10px;
+          @include flexCenter();
+          border-radius: 100px;
           color: $textColor;
+          text-decoration: none;
+          border: 2px solid $greyBackground;
+          transition: .2s ease-in-out;
+          font-weight: 600;
           &:hover {
+            background-color: $whiteBackground;
             color: $greyBackground;
-            transition: .1s ease-in-out;
-          }
-        }
-        &:hover {
-          cursor: pointer;
-          background-color: $textColor;
-          transition: .1s ease-in-out;
-          a {
-            color: $greyBackground;
+            transition: .2s ease-in-out;
           }
         }
       }
+
       .image {
         position: absolute;
         height: 400px;
@@ -198,7 +193,7 @@ body {
         color: $greyBackground;
       }
       &:hover {
-        .title, .description, .repo-button {
+        .title, .description, .buttons {
           opacity: 1;
           @include flexCenter();
           transition: .3s ease-in-out;

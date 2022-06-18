@@ -238,15 +238,21 @@ body {
   transition: .3s ease-in-out;
 }
 
-.projects .project-cards .card .repo-button {
+.projects .project-cards .card .buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.projects .project-cards .card .buttons a {
   background-color: #313131;
-  height: 40px;
-  font-weight: 600;
-  color: #ffffff;
-  border-radius: 30px;
-  border: 2px solid #313131;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
+  z-index: 3;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,32 +262,20 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px 75px;
-  opacity: 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.projects .project-cards .card .repo-button a {
-  text-decoration: none;
+  border-radius: 100px;
   color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #313131;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  font-weight: 600;
 }
 
-.projects .project-cards .card .repo-button a:hover {
-  color: #313131;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
-}
-
-.projects .project-cards .card .repo-button:hover {
-  cursor: pointer;
+.projects .project-cards .card .buttons a:hover {
   background-color: #ffffff;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
-}
-
-.projects .project-cards .card .repo-button:hover a {
   color: #313131;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .projects .project-cards .card .image {
@@ -304,7 +298,7 @@ body {
   color: #313131;
 }
 
-.projects .project-cards .card:hover .title, .projects .project-cards .card:hover .description, .projects .project-cards .card:hover .repo-button {
+.projects .project-cards .card:hover .title, .projects .project-cards .card:hover .description, .projects .project-cards .card:hover .buttons {
   opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;

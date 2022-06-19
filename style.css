@@ -453,23 +453,46 @@ body {
 
 .socials .links {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.socials .links .linkedin, .socials .links .github, .socials .links .resume, .socials .links .contact-me {
+.socials .links .linkedin, .socials .links .github, .socials .links .resume, .socials .links .email {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 6fr;
       grid-template-columns: 1fr 6fr;
   gap: 10px;
   margin: 50px;
+  width: 80%;
 }
 
-.socials .links .linkedin a, .socials .links .github a, .socials .links .resume a, .socials .links .contact-me a {
+.socials .links .linkedin a, .socials .links .github a, .socials .links .resume a, .socials .links .email a {
   text-decoration: none;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.socials .links .linkedin .logo-box, .socials .links .github .logo-box, .socials .links .resume .logo-box, .socials .links .contact-me .logo-box {
+.socials .links .linkedin .logo-box, .socials .links .github .logo-box, .socials .links .resume .logo-box, .socials .links .email .logo-box {
   background: -webkit-gradient(linear, left top, right bottom, from(#26fff2), to(#18f856));
   background: linear-gradient(to bottom right, #26fff2, #18f856);
   padding: 10px;
@@ -486,14 +509,15 @@ body {
           justify-content: center;
 }
 
-.socials .links .linkedin .logo-box .logo, .socials .links .github .logo-box .logo, .socials .links .resume .logo-box .logo, .socials .links .contact-me .logo-box .logo {
+.socials .links .linkedin .logo-box .logo, .socials .links .github .logo-box .logo, .socials .links .resume .logo-box .logo, .socials .links .email .logo-box .logo {
   height: 50px;
 }
 
-.socials .links .linkedin .button, .socials .links .github .button, .socials .links .resume .button, .socials .links .contact-me .button {
+.socials .links .linkedin .social-button, .socials .links .github .social-button, .socials .links .resume .social-button, .socials .links .email .social-button {
   background: -webkit-gradient(linear, left top, right bottom, from(#26fff2), to(#18f856));
   background: linear-gradient(to bottom right, #26fff2, #18f856);
   padding: 30px;
+  width: 300px;
   height: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,7 +535,7 @@ body {
   transition: .15s ease-in-out;
 }
 
-.socials .links .linkedin .button:hover, .socials .links .github .button:hover, .socials .links .resume .button:hover, .socials .links .contact-me .button:hover {
+.socials .links .linkedin .social-button:hover, .socials .links .github .social-button:hover, .socials .links .resume .social-button:hover, .socials .links .email .social-button:hover {
   cursor: pointer;
   color: #313131;
   -webkit-transition: .15s ease-in-out;

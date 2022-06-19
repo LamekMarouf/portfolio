@@ -271,14 +271,18 @@ body {
   }
   .links {
     margin-top: 50px;
-    .linkedin, .github, .resume, .contact-me {
+    @include flexCenter();
+    flex-direction: column;
+    .linkedin, .github, .resume, .email {
       display: grid;
       grid-template-columns: 1fr 6fr;
       gap: 10px;
       margin: 50px;
+      width: 80%;
       a {
         text-decoration: none;
         color: $textColor;
+        @include flexCenter();
       }
       .logo-box {
         background: $cardGradient;
@@ -290,9 +294,10 @@ body {
           height: 50px;
         }
       }
-      .button {
+      .social-button {
         background: $cardGradient;
         padding: 30px;
+        width: 300px;
         height: 15px;
         @include flexCenter();
         font-size: 30px;

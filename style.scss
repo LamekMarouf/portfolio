@@ -163,6 +163,7 @@ body {
         gap: 30px;
         opacity: 0;
         transition: .3s ease-in-out;
+        @include flexCenter();
         a {
           background-color: $greyBackground;
           z-index: 3;

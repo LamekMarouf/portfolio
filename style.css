@@ -6,6 +6,35 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+  background-color: #686868;
+  z-index: 10;
+  color: #ffffff;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  height: 120px;
+  top: -50px;
+  border: 2px solid #313131;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding: 10px;
+}
+
 .home {
   background-color: #313131;
   display: -webkit-box;

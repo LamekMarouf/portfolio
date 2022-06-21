@@ -5,13 +5,17 @@ $titleColor: #59dbdb;
 $secondaryTextColor: #c1c1c1;
 $titleSize: 36px;
 $cardGradient: linear-gradient(to bottom right, #26fff2, #18f856);
-$cardText: #3a3a3a;
-$navbarColor: #686868;
+$cardText: rgb(58, 58, 58);
+$navbarColor: rgba(50, 50, 50, 0.8);
 
 @mixin flexCenter {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,22 +26,30 @@ body {
 }
 
 .navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   ul {
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    font-size: 14px;
+    font-size: 12px;
     position: fixed;
     width: 100%;
     background-color: $navbarColor;
     z-index: 10;
     color: $textColor;
-    transform: rotate(-3deg);
-    height: 120px;
-    top: -50px;
-    border: 2px solid $greyBackground;
+    font-weight: 600;
+    a {
+      text-decoration: none;
+      color: $textColor;
+      transition: .2s ease;
+      &:hover {
+        color: $titleColor;
+        transition: .2s ease;
+      }
+    }
     li {
       list-style: none;
       padding: 10px;
@@ -302,7 +314,7 @@ body {
       display: grid;
       grid-template-columns: 1fr 6fr;
       gap: 10px;
-      margin: 50px;
+      margin: 20px;
       width: 80%;
       a {
         text-decoration: none;
